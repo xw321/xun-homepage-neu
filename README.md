@@ -10,6 +10,8 @@ This repository is for the first project of Web Development course(CS5610) in No
 
 All source files can be found under docs folder, due to the requirement of GitHub project pages.
 
+The theme template was adapted from start bootstrap website. You can find the template source code [here](https://github.com/BlackrockDigital/startbootstrap-agency).
+
 
 ### Technology used
 
@@ -34,8 +36,10 @@ TODO
 
 ### Screenshot
 
+Home page screenshot:
 
-TODO
+
+![alt text](https://xw321.github.io/xun-homepage-neu/demo.png "page demo")
 
 ### Author
 
