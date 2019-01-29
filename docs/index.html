@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- TODO: add js feature-->
+
+<!-- For my peer code reviewer: 
+  This document is adpted from a template from https://startbootstrap.com/template-overviews/agency/
+  I bascially reformatted the layout and changed a few styles and added my own content.
+
+  This whole doc is mainly composed with 6 parts as you should see on the actual webpage:
+    Navigation, Header, Skills, Projects Grid, Education, Footer, and Projects Modals.
+
+  The JS(Vanilla) feature is done in the Skills section, where I added onmouseover/onmouseout events on each skill.
+  You can refer to the JS funtions in js/myVanilla.js
+
+-->
 
 <head>
   <meta charset="UTF-8">
@@ -19,6 +30,8 @@
   <link href="css/agency.min.css" rel="stylesheet">
   <title>Xun Wang - Home</title>
 </head>
+
+
 
 <body>
   <!-- Navigation -->
@@ -62,6 +75,11 @@
   </header>
 
   <!-- Skills -->
+
+  <!-- For my peer code reviewer: 
+    In this section below I used the naive JS onmouseover/onmouseout events 
+    to cal my function to trigger the effect.  
+  -->
   <section id="services">
     <div class="container">
       <div class="row">
@@ -76,21 +94,21 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Java</h4>
+          <h4 class="service-heading" id="JAVA" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)">Java</h4>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">JavaScript</h4>
+          <h4 class="service-heading" id="JavaScript" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)">JavaScript</h4>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Python</h4>
+          <h4 class="service-heading" id="Python" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)">Python</h4>
         </div>
       </div>
 
@@ -100,21 +118,21 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">C</h4>
+          <h4 class="service-heading" id="C" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)">C</h4>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">PHP</h4>
+          <h4 class="service-heading" id="PHP" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)">PHP</h4>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-code fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">SQL</h4>
+          <h4 class="service-heading" id="SQL" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)">SQL</h4>
         </div>
       </div>
     </div>
@@ -127,7 +145,6 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Projects</h2>
-          <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
       <div class="row">
@@ -179,7 +196,7 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- Education -->
   <section id="about">
     <div class="container">
       <div class="row">
@@ -294,7 +311,7 @@
 
 
 
-  <!-- Portfolio Modals -->
+  <!-- Projects Modals -->
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -449,9 +466,8 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <!-- JS vanilla feature JavaScript -->
+  <script src="js/myVanilla.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
