@@ -39,7 +39,7 @@ TODO
 Home page screenshot:
 
 
-![alt text](https://xw321.github.io/xun-homepage-neu/demo.png "page demo")
+![alt text](https://github.com/xw321/xun-homepage-neu/blob/master/demo.png "page demo")
 
 ### Author
 
